@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Product</title>
+</head>
+<body>
+    <h1>New Product</h1>
+    <form action="/newProduct" method="post">
+        Name <input type="text" name="txtName">
+        <div style="color: red;">{{nameError}}</div> 
+        <br>
+        Price   <input type="text" name="txtPrice">
+        <br><br>
+        Picture URL <input type="text" name="txtPicture">
+        <br><br>
+        <input type="submit" value="Create Product">
+    </form>
+</body>
+</html>
